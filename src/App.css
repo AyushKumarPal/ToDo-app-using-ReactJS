@@ -1,38 +1,107 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
+
+h1{
+  font-size: 5rem;
+}
+
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283__340.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', 'sans';
   text-align: center;
+  background-color: #84d0ab;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#addBtn{
+  transition: 500ms;
+  background-color: #0a0909;
+  color : #F6F7D7;
+  border-radius: 8px;
+  border : 1.5px solid black;
+  padding: 4px 6px;
+  margin: 1rem 1rem;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#addBtn:hover{
+  transition: 300ms;
+  background-color: #5490cc;
+  color : #ac0000;
+  font-weight: bold;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#textInput{
+  border-radius: 15px;
+  padding: 5px 10px;
+  border: 1.8px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+#addDiv{
+  padding: 0 15vw;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#listDiv{
+  background-color: rgb(85, 181, 228);
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: left;
+  margin: 10vh 15vw;
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
+}
+
+.listItems{
+  display: block;
+  background-color: white;
+  padding: 5px 5px;
+  margin: 6px 0;
+  border : 1px solid black;
+  border-radius: 5px;
+}
+
+.listItems:hover{
+  color : #1A5F7A;
+  background-color: #FFF89A;
+  cursor: pointer;
+}
+
+.button-span{
+  margin-left: 10vw;
+}
+
+.button-span > button{
+  margin-left: 2vw;
+  border-radius: 15px;
+}
+
+.btn-done{
+  background-color: rgba(73, 201, 107,0.5) ;
+  border : 1.2px solid rgba(46, 128, 50);
+}
+
+.btn-remove{
+  background-color: rgba(219, 53, 92,0.5) ;
+  border : 1.2px solid rgba(219, 53, 92);
+}
+
+.btn-done:hover{
+  background-color: rgba(73, 201, 107) ;
+}
+
+.btn-remove:hover{
+  background-color: rgba(219, 53, 92) ;
+}
+
+.taskName{
+  display: inline-block;
+  width : 42vw; 
+  color : #116530;
+}
+
+.isDone{
+  transition: 1000ms;
+  color : #F90716;
 }
